@@ -5,8 +5,9 @@
       "name": "Mutton Bhuna - lets_eat_with_prachi",
       "description": "This is the one that’s won over my friends and family",
       "source": {
-        "type": "website",
-        "url": "https://www.instagram.com/reel/DFNPUUeIRzJ/?igsh=QkFaRHdtM3AyRg%3D%3D"
+        "type": "instagram",
+        "url": "https://www.instagram.com/reel/DFNPUUeIRzJ/?igsh=QkFaRHdtM3AyRg%3D%3D",
+        "embedId": "DFNPUUeIRzJ"
       },
       "ingredients": [
         "500g Mutton, small pieces with bones",
@@ -46,29 +47,16 @@
     },
     {
       "id": "2",
-      "name": "Quick Pasta Carbonara",
-      "description": "Traditional Italian carbonara with a creamy egg sauce",
+      "name": "Andhra Green Chilli chicken  - lets_eat_with_prachi",
+      "description": "it’s spicy, packed with flavours and you won’t be able to resist yourself",
       "source": {
-        "type": "youtube",
-        "url": "https://www.youtube.com/embed/example",
-        "embedId": "example"
+        "type": "instagram",
+        "url": "https://www.instagram.com/reel/DFcrS11TR1I/?igsh=QkFDbk91bXRlaQ%3D%3D",
+        "embedId": "DFcrS11TR1I"
       },
-      "ingredients": [
-        "400g spaghetti",
-        "200g pancetta",
-        "4 large eggs",
-        "100g Pecorino Romano",
-        "100g Parmigiano Reggiano",
-        "Black pepper"
-      ],
-      "preparation": [
-        "Cook pasta in salted water",
-        "Fry pancetta until crispy",
-        "Mix eggs and cheese",
-        "Combine all ingredients",
-        "Add pasta water if needed"
-      ],
-      "image": "/images/carbonara.jpg"
+      "ingredients": [],
+      "preparation": [],
+      "image": "/images/2-andhra-green-chilli-chicken.png"
     }
   ]
 }
