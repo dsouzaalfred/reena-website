@@ -1,0 +1,74 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Mutton Bhuna - lets_eat_with_prachi",
+      "description": "This is the one that’s won over my friends and family",
+      "source": {
+        "type": "website",
+        "url": "https://www.instagram.com/reel/DFNPUUeIRzJ/?igsh=QkFaRHdtM3AyRg%3D%3D"
+      },
+      "ingredients": [
+        "500g Mutton, small pieces with bones",
+        "2 medium Onions, finely sliced",
+        "2.5 tsp Ginger garlic paste",
+        "4 tsp Coriander seeds",
+        "2 tsp Cumin seeds",
+        "1 Bay leaf",
+        "2 small pieces Cinnamon",
+        "4 Cloves",
+        "2 Black cardamoms",
+        "4 Green cardamom",
+        "25 Black peppercorns",
+        "1/4 tsp Turmeric powder",
+        "2 Green chillies, cut into halves",
+        "3 tbsp Curd/yogurt, whisked",
+        "1 tsp Kashmiri Chilli powder",
+        "1 tsp Salt",
+        "3 tbsp Refined oil",
+        "2 tbsp Chopped coriander, for garnish"
+      ],
+      "preparation": [
+        "1. Roast the Bhuna Masala spices in a pan on low heat for 3 minutes.",
+        "2. Grind the roasted spices into a fine powder.",
+        "3. Slice the onions, cut the green chillies, and chop the coriander leaves.",
+        "1. Heat oil in a pressure cooker/heavy-bottomed pan.",
+        "2. Fry the sliced onions for 10 minutes till golden.",
+        "3. Add the mutton pieces and sear/bhunno for 5 minutes.",
+        "4. Add the ginger garlic paste and fry for 2 minutes.",
+        "5. Add the turmeric and Kashmiri Chilli powder, and bhunno for 5 minutes.",
+        "6. Add water and pressure cook for 4 whistles or cook covered in a pan for 45 minutes.",
+        "7. Mix in whisked curd/yogurt and cook for 2-3 minutes.",
+        "8. Add 2-3 tsp ground Bhuna Masala powder and fry for 3-4 minutes.",
+        "9. Garnish with chopped coriander leaves and serve with naan or rice."
+      ],
+      "image": "/images/1-mutton-bhuna.png"
+    },
+    {
+      "id": "2",
+      "name": "Quick Pasta Carbonara",
+      "description": "Traditional Italian carbonara with a creamy egg sauce",
+      "source": {
+        "type": "youtube",
+        "url": "https://www.youtube.com/embed/example",
+        "embedId": "example"
+      },
+      "ingredients": [
+        "400g spaghetti",
+        "200g pancetta",
+        "4 large eggs",
+        "100g Pecorino Romano",
+        "100g Parmigiano Reggiano",
+        "Black pepper"
+      ],
+      "preparation": [
+        "Cook pasta in salted water",
+        "Fry pancetta until crispy",
+        "Mix eggs and cheese",
+        "Combine all ingredients",
+        "Add pasta water if needed"
+      ],
+      "image": "/images/carbonara.jpg"
+    }
+  ]
+}
