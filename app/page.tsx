@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
-  const recipes: Recipe[] = recipeData.recipes;
+  const recipes = recipeData.recipes as Recipe[];
 
   return (
     <main className="min-h-screen p-8">

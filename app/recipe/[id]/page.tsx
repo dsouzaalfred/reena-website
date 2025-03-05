@@ -2,17 +2,22 @@ import { Recipe } from '../../../src/types/recipe';
 import recipeData from '../../../src/data/recipes.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-interface Props {
-  params: {
-    id: string;
+export type ParamsType = Promise<{ id: string }>;
+
+export async function generateMetadata({ params }: { params: ParamsType }): Promise<Metadata> {
+  const { id } = await params;
+  const recipe = (recipeData.recipes as Recipe[]).find((r) => r.id === id);
+  return {
+    title: recipe ? recipe.name : 'Recipe Not Found',
+    description: recipe?.description,
   };
 }
 
-export default function RecipePage({ params }: Props) {
-  const recipe: Recipe | undefined = recipeData.recipes.find(
-    (r) => r.id === params.id
-  );
+export default async function Page({ params }: { params: ParamsType }) {
+  const { id } = await params;
+  const recipe = (recipeData.recipes as Recipe[]).find((r) => r.id === id);
 
   if (!recipe) {
     return (
