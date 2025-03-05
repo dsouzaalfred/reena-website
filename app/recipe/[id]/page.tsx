@@ -28,27 +28,33 @@ export default function RecipePage({ params }: Props) {
   const EmbeddedContent = () => {
     if (recipe.source.type === 'youtube' && recipe.source.embedId) {
       return (
-        <iframe
-          width="100%"
-          height="400"
-          src={`https://www.youtube.com/embed/${recipe.source.embedId}`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="mb-8 rounded-lg"
-        />
+        <div className="aspect-video w-full mb-8">
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${recipe.source.embedId}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-lg"
+          />
+        </div>
       );
     }
     if (recipe.source.type === 'instagram' && recipe.source.embedId) {
       return (
-        <iframe
-          src={`https://www.instagram.com/p/${recipe.source.embedId}/embed`}
-          width="100%"
-          height="400"
-          frameBorder="0"
-          scrolling="no"
-          allowTransparency
-          className="mb-8 rounded-lg"
-        />
+        <div className="flex justify-center mb-8">
+          <div className="w-[320px] h-[570px]">
+            <iframe
+              src={`https://www.instagram.com/reel/${recipe.source.embedId}/embed`}
+              width="320"
+              height="570"
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency
+              className="rounded-lg"
+            />
+          </div>
+        </div>
       );
     }
     return null;
