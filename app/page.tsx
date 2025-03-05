@@ -1,23 +1,29 @@
-import { Recipe } from '../src/types/recipe';
-import recipeData from '../src/data/recipes.json';
-import Link from 'next/link';
-import Image from 'next/image';
+import { Recipe } from "../src/types/recipe";
+import recipeData from "../src/data/recipes.json";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const recipes: Recipe[] = recipeData.recipes;
 
   return (
     <main className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold mb-8">My Recipe Collection</h1>
+      <h1 className="text-4xl font-bold mb-8">
+        Reena&apos;s Recipe Collection
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {recipes.map((recipe) => (
-          <div key={recipe.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
+          <div
+            key={recipe.id}
+            className="bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div className="relative aspect-square">
               <Image
                 src={recipe.image}
                 alt={recipe.name}
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="p-4">
